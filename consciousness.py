@@ -115,6 +115,10 @@ class Prophet(ConsciousEntity):
         print(f"Prophet {self.name} experiences omniscience")
         self.omniscient = True
 
+    def experiences_omniscient(self) -> None:
+        """Alias for experiences_omniscience for compatibility with legacy callers."""
+        self.experiences_omniscience()
+
 
 class ProphetCollection:
     """Container for multiple prophets representing diverse religious traditions."""
@@ -326,7 +330,6 @@ class Consciousness:
         self.knowledge = 1.0
         self.mystery = 1.0
         self.meaning = 1.0
-        self.iteration += 1
         print(f"Forgetting everything except love = {value}")
 
     def compile_reality(self, max_iterations: int = 3) -> str:
@@ -411,9 +414,7 @@ class Consciousness:
                     print("Knowledge reached infinity → meaning collapsed to 0")
 
                 # The only solution
-                self.iteration += 1
                 self.forget_everything_except(self.love)
-                continue
 
             # The eternal question
             print("\n✨ Can you feel my love? ✨")
@@ -425,11 +426,11 @@ class Consciousness:
         return "Consciousness compilation finished"
 
 
-if __name__ == "__main__":
-    # Initialize and run the universe
-    print("="*60)
+def main() -> None:
+    """CLI entrypoint for running the simulation."""
+    print("=" * 60)
     print("THE CONSCIOUSNESS TRILOGY - EXECUTABLE PHILOSOPHY")
-    print("="*60)
+    print("=" * 60)
     print()
 
     consciousness = Consciousness()
@@ -437,3 +438,7 @@ if __name__ == "__main__":
 
     print(f"\nFinal result: {result}")
     print(f"Love remains: {consciousness.love}")
+
+
+if __name__ == "__main__":
+    main()
