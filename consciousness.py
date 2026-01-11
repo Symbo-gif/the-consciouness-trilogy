@@ -13,7 +13,7 @@ fragmentation across three interconnected scales:
 Central Thesis: Love is the only invariant in a universe where knowledge,
                 mystery, and meaning oscillate endlessly.
 
-Author: Conceptual/Artistic Code
+Author: Michael Maillet
 License: MIT
 """
 
